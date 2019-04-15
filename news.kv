@@ -1,0 +1,26 @@
+MainLayout:
+	canvas.before:
+		Color:
+			rgba: 0,0,1,0.1
+		Rectangle:
+			size: self.size
+			
+	FloatLayout:
+		size_hint: 0.7,0.95
+		pos_hint: {'x':0.025, 'center_y':0.5}
+		canvas.before:
+			Color:
+				rgb:0.05,0.05,0
+			Rectangle:
+				size: self.size
+				pos: self.pos
+				
+	FloatLayout:
+		size_hint: 0.225, 0.95
+		pos_hint: {'x':0.75, 'center_y':0.5}
+		canvas.before:
+			Color:
+				rgba: 0,1,0,0.11
+			Rectangle:
+				size: self.size
+				pos: self.pos
