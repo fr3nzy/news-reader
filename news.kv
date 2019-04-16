@@ -1,7 +1,7 @@
 MainLayout:
 	canvas.before:
 		Color:
-			rgba: 0,0,1,0.1
+			rgba: 0,0,1,0.3
 		Rectangle:
 			size: self.size
 			
@@ -14,13 +14,24 @@ MainLayout:
 			Rectangle:
 				size: self.size
 				pos: self.pos
+		ScrollView:
+			size_hint: None, None
+			pos: self.parent.pos
+			size: self.parent.size
+			Output:
+				text: '   > '
+				size_hint: None,None
+				size: self.texture_size
+				text_size: self.parent.width, None
+				
+			
 				
 	FloatLayout:
 		size_hint: 0.225, 0.95
 		pos_hint: {'x':0.75, 'center_y':0.5}
 		canvas.before:
 			Color:
-				rgba: 0,1,0,0.11
+				rgba: 0,1,0,0.2
 			Rectangle:
 				size: self.size
 				pos: self.pos
